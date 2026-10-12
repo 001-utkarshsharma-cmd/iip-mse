@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #141e30;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Welcome Section */
+.welcome {
+    text-align: center;
+    padding: 30px;
+}
+
+/* Featured Books */
+#featuredSection {
+    padding: 20px;
+    text-align: center;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    background-color: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #cccccc;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+    background-color: #243b55;
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #141e30;
+}
+
+/* Class used by JavaScript */
+.highlight {
+    background-color: #ffe08a;
+}

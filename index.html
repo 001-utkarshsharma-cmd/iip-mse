@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1 id="mainHeading">Campus Book Exchange</h1>
+        <p>Share Knowledge, Exchange Books!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to Our Campus Book Exchange!</h2>
+
+        <p>
+            Exchange books with fellow students, discover new stories,
+            and give your old books a new home. Our service makes it
+            easy for students to share knowledge and save money.
+        </p>
+
+        <button onclick="changeHeading()">Change Main Heading</button>
+    </section>
+
+    <!-- Featured Books Section -->
+    <section id="featuredSection">
+
+        <h2>Featured Books</h2>
+
+        <div class="book-container">
+
+            <div class="book-card" id="book1">
+                <h3>Atomic Habits</h3>
+                <p><strong>Author:</strong> James Clear</p>
+                <p><strong>Category:</strong> Self-Help</p>
+            </div>
+
+            <div class="book-card" id="book2">
+                <h3>Rich Dad Poor Dad</h3>
+                <p><strong>Author:</strong> Robert Kiyosaki</p>
+                <p><strong>Category:</strong> Finance</p>
+            </div>
+
+            <div class="book-card" id="book3">
+                <h3>Wings of Fire</h3>
+                <p><strong>Author:</strong> A. P. J. Abdul Kalam</p>
+                <p><strong>Category:</strong> Autobiography</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- JavaScript Buttons -->
+    <div class="controls">
+        <button onclick="changeCardColor()">Change Book Card Colour</button>
+        <button onclick="toggleBooks()">Show / Hide Featured Books</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

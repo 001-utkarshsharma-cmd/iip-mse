@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Browse Books - Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Browse Books</h1>
+        <p>Find Your Next Favourite Book!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <!-- Available Books -->
+    <section>
+        <h2>Available Books</h2>
+
+        <div class="book-container">
+
+            <!-- Book 1 -->
+            <div class="book-card" id="book1">
+                <h3>Atomic Habits</h3>
+                <p>Author: James Clear</p>
+                <p>Category: Self-Help</p>
+                <p>Condition: Good</p>
+
+                <button onclick="requestBook(this)">
+                    Mark as Requested
+                </button>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="book-card" id="book2">
+                <h3>Wings of Fire</h3>
+                <p>Author: A. P. J. Abdul Kalam</p>
+                <p>Category: Biography</p>
+                <p>Condition: Excellent</p>
+
+                <button onclick="requestBook(this)">
+                    Mark as Requested
+                </button>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="book-card" id="book3">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>Author: Robert Kiyosaki</p>
+                <p>Category: Finance</p>
+                <p>Condition: Good</p>
+
+                <button onclick="requestBook(this)">
+                    Mark as Requested
+                </button>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="book-card" id="book4">
+                <h3>The Alchemist</h3>
+                <p>Author: Paulo Coelho</p>
+                <p>Category: Fiction</p>
+                <p>Condition: Fair</p>
+
+                <button onclick="requestBook(this)">
+                    Mark as Requested
+                </button>
+            </div>
+
+        </div>
+
+        <p id="requestMessage"></p>
+    </section>
+
+    <hr>
+
+    <!-- Search by Book Title -->
+    <section class="welcome">
+
+        <h2>Find a Book by Title</h2>
+
+        <input
+            type="text"
+            id="bookTitle"
+            placeholder="Enter book title"
+        >
+
+        <button onclick="showBook()">
+            Show Book
+        </button>
+
+        <h3 id="displayTitle"></h3>
+        <p id="titleMessage"></p>
+
+    </section>
+
+    <!-- Change Book Card Appearance -->
+    <section class="welcome">
+
+        <button onclick="changeBookAppearance()">
+            Change Book Card Appearance
+        </button>
+
+    </section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

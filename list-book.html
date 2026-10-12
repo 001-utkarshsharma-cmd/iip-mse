@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List a Book - Campus Book Exchange</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>List Your Book</h1>
+        <p>Share Your Books with Fellow Students!</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Browse Books</a>
+        <a href="list-book.html">List a Book</a>
+    </nav>
+
+    <!-- Form Section -->
+    <section class="form-section">
+
+        <h2 id="formHeading">Submit Your Book Details</h2>
+
+        <form id="bookForm" onsubmit="submitBook(event)">
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" placeholder="Enter your name">
+
+            <label for="newBookTitle">Book Title:</label>
+            <input type="text" id="newBookTitle" placeholder="Enter book title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="Enter author's name">
+
+            <label for="category">Subject / Category:</label>
+            <input type="text" id="category" placeholder="Enter category">
+
+            <label for="condition">Book Condition:</label>
+
+            <select id="condition">
+                <option value="">Select condition</option>
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Fair">Fair</option>
+            </select>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <!-- Confirmation or Error Message -->
+        <p id="formMessage"></p>
+
+        <!-- Additional Buttons -->
+        <div class="controls">
+
+            <button type="button" onclick="changeFormHeadingSize()">
+                Change Heading Font Size
+            </button>
+
+            <button type="button" onclick="toggleForm()">
+                Show / Hide Form
+            </button>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
