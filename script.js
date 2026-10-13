@@ -5,16 +5,12 @@ function changeHeading() {
     
 }
 
-
-
 function changeCardColor() {
     document.getElementById("book1").classList.toggle("highlight");
     document.getElementById("book2").classList.toggle("highlight");
     document.getElementById("book3").classList.toggle("highlight");
 }
 
-
-// 3. Show or hide the featured books section
 function toggleBooks() {
     let section = document.getElementById("featuredSection");
 
@@ -24,7 +20,7 @@ function toggleBooks() {
         section.style.display = "none";
     }
 }
-// 4. Mark a book as requested
+
 function requestBook(button) {
     button.textContent = "Request Sent";
 
@@ -60,7 +56,6 @@ function submitBook(event) {
 
     let message = document.getElementById("formMessage");
 
-    // Validate all required fields
     if (
         name === "" ||
         title === "" ||
@@ -73,7 +68,7 @@ function submitBook(event) {
 
         message.style.color = "red";
     } else {
-        // Display the success message
+
         message.textContent =
             "Thank you, " + name +
             "! Your book '" + title +
@@ -83,8 +78,6 @@ function submitBook(event) {
     }
 }
 
-
-// 8. Change the form heading font size
 function changeFormHeadingSize() {
 
     let heading = document.getElementById("formHeading");
@@ -96,8 +89,6 @@ function changeFormHeadingSize() {
     }
 }
 
-
-// 9. Show or hide the book listing form
 function toggleForm() {
 
     let form = document.getElementById("bookForm");
